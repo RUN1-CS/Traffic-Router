@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Traffic Router",
+  "version": "0.1.0",
+  "description": "Redirects traffic from one domain to another.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://megacloud.blog/*",
+    "*://aniwatchtv.to/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
