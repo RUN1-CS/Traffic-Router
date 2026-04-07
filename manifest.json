@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "description": "Redirects traffic from one domain to another.",
   "permissions": ["storage", "webRequest", "webRequestBlocking"],
-  "host_permissions": ["*://*/*"],
+  "host_permissions": ["<all_urls>"],
   "background": {
     "scripts": ["background.js"]
   },
