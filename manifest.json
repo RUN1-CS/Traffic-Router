@@ -1,18 +1,23 @@
 {
   "manifest_version": 2,
   "name": "Traffic Router",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "trafficRouter@run1-cs"
+    }
+  },
   "version": "0.1.0",
   "description": "Redirects traffic from one domain to another.",
-  "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-    "*://megacloud.blog/*",
-    "*://aniwatchtv.to/*"
-  ],
+  "permissions": ["webRequest", "webRequestBlocking", "*://*/*", "storage"],
   "background": {
     "scripts": ["background.js"]
   },
   "icons": {
     "48": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Traffic Router",
+    "default_popup": "popup/popup.html"
   }
 }
