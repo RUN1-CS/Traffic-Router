@@ -3,7 +3,10 @@
   "name": "Traffic Router",
   "browser_specific_settings": {
     "gecko": {
-      "id": "trafficRouter@run1-cs"
+      "id": "trafficRouter@run1-cs",
+      "data_collection_permissions": {
+        "required": ["browsingActivity", "websiteContent", "websiteActivity"]
+      }
     }
   },
   "version": "0.1.0",
